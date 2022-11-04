@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include"script.h"
+
 int Men1(){ //Menu 1
     int m1; //This section is for Linux Commands
     printf("\nLine Commands\n\n");
@@ -40,7 +42,6 @@ int main(){
         //First Menu
         case 1: {        
             extern int Men1();
-
             int ipc = system("ipconfig");
             system("ipconfig"); //Needs a CMD command
             return Men1(); //Won't return after 
@@ -89,8 +90,9 @@ int main(){
                 case 1: {
                     extern int Men3();
                     mm = Men3();
-                    printf("NMAP");
-                    return mm;
+                    puts("SHELLSCRIPT");
+                    system("SHELLSCRIPT");
+                    return 0;
                 }
                 case 2: {
                     extern int Men3();
