@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include"script.h"
 
 int Men1(){ //Menu 1
     int m1; //This section is for Linux Commands
@@ -90,8 +89,10 @@ int main(){
                 case 1: {
                     extern int Men3();
                     mm = Men3();
-                    puts("SHELLSCRIPT");
-                    system("SHELLSCRIPT");
+                    #include "test.sh"
+                    fopen("SCRIPT");
+                    puts("SCRIPT");
+                    fclose("SCRIPT");
                     return 0;
                 }
                 case 2: {
