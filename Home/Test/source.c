@@ -89,10 +89,6 @@ int main(){
                 case 1: {
                     extern int Men3();
                     mm = Men3();
-                    #include "test.sh"
-                    fopen("SCRIPT");
-                    puts("SCRIPT");
-                    fclose("SCRIPT");
                     return 0;
                 }
                 case 2: {
